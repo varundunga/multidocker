@@ -20,7 +20,7 @@ deploy:
   provider: elasticbeanstalk
   region: "ap-south-1"
   app: "md"
-  env: "Md-env-1"
+  env: "Md-env"
   bucket_name: "elasticbeanstalk-ap-south-1-501352840692"
   bucket_path: "md"
   on: 
