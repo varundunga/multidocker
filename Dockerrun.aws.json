@@ -31,7 +31,7 @@
                 }
             ],
             "links": [
-                "server","client"
+                "api","client"
             ]
         }
     ]
