@@ -16,3 +16,16 @@ after_success:
   - docker push varundunga/server
   - docker push varundunga/worker
   - docker push varundunga/nginx
+deploy:
+  provider: elasticbeanstalk
+  region: "ap-south-1"
+  app: "multidocker"
+  env: "Multidocker-env-1"
+  bucket_name: "elasticbeanstalk-ap-south-1-501352840692"
+  bucket_path: "multidocker"
+  on: 
+    branch: master
+  access_key_id:
+    secure: "$AWS_ID"
+  secret_access_key:
+    secure: "$AWS_PWD"  
